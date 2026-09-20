@@ -10,7 +10,7 @@ $resolvedSourceFile = (Resolve-Path -LiteralPath $SourceFile).Path
 
 New-Item -ItemType Directory -Path $outputDirectory -Force | Out-Null
 
-& javac -encoding UTF-8 -sourcepath $sourceRoot -d $outputDirectory $resolvedSourceFile
+& javac --release 25 -encoding UTF-8 -sourcepath $sourceRoot -d $outputDirectory $resolvedSourceFile
 if ($LASTEXITCODE -ne 0) {
     exit $LASTEXITCODE
 }

@@ -1,4 +1,11 @@
 {
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-25",
+            "path": "C:\\Program Files\\Zulu\\zulu-25",
+            "default": true
+        }
+    ],
     "code-runner.executorMap": {
         "java": "powershell -NoProfile -ExecutionPolicy Bypass -File \"$workspaceRoot\\.vscode\\run-java.ps1\" \"$fullFileName\""
     },
