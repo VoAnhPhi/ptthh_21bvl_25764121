@@ -1,0 +1,12 @@
+
+package lab6.bai05;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+public interface ChatService extends Remote {
+
+	void sendMessage(String message) throws RemoteException;
+
+	String getReply() throws RemoteException;
+}
